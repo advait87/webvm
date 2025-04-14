@@ -12,7 +12,7 @@ cat         # Spits file contents. Like, "meow", but nerdy. cat file.txt
 head        # Shows the first few lines of a file. Who reads full files anyway?
 
 grep -r "thing" .   # Dig through files for "thing". Super annoying but kinda useful.
-sh script.sh        # Run a shell script. Just do it. No whining.
+./script.sh         # Run a shell script. Just do it. No whining.
 python3             # Python, Morty. It's like regular Python but newer.
 --help              # Slap this on a command to beg for usage info. Example: ls --help
 
