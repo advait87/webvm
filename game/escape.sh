@@ -8,7 +8,7 @@ if [ -f "password.txt" ]; then
     # If the file exists, read its content and check if it's "mUnChy"
     stored_password=$(cat password.txt)
     
-    if [ "$stored_password" == "mUnChy" ]; then
+    if [ "$stored_password" == "mUnrHn" ]; then
         echo "Well, Morty, you actually got it right! The password is correct! You won!"
     else
         echo "Morty, that password is wrong! It's not what I told you! Try again!"
