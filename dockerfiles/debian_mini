@@ -15,6 +15,6 @@ RUN chmod +x /usr/local/bin/rick
 # We set WORKDIR, as this gets extracted by Webvm to be used as the cwd. This is optional.
 WORKDIR /home/morty/
 # We set env, as this gets extracted by Webvm. This is optional.
-ENV HOME="/home/morty" TERM="xterm" USER="morty" SHELL="/bin/bash" EDITOR="vim" LETTER_THREE="n"
+ENV HOME="/home/morty" TERM="xterm" USER="morty" SHELL="/bin/bash" EDITOR="vim" LETTERTHREE="n"
 RUN echo 'root:password' | chpasswd
 CMD [ "/bin/bash" ]
