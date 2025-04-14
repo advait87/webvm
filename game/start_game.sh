@@ -22,21 +22,7 @@ say "Rick: What the f Morty, someone linked my brain to this computer. We’re i
 
 # 3. Copy to Clipboard
 COMMAND="cat \$HOME/chitsheet.txt"
-read -p "Rick: Should I copy this command to your clipboard Morty? (y/n) " choice
-
-if [[ "$choice" =~ ^[Yy]$ ]]; then
-    if command -v xclip >/dev/null; then
-        echo "$COMMAND" | xclip -selection clipboard
-        echo "Rick: Boom! It's in your clipboard Morty!"
-    elif command -v pbcopy >/dev/null; then
-        echo "$COMMAND" | pbcopy
-        echo "Rick: Boom! It's in your clipboard Morty!"
-    else
-        echo "Rick: Aaah crap! Clipboard tool not found, you're on your own Morty!"
-    fi
-else
-    echo "Rick: Fine Morty, don’t take my help. Typical."
-fi
+echo "Morty wherever you are, run cat \$HOME/chitsheet.txt to see my cheatsheet of Linux commands"
 
 # 4. Timer function
 REMAINING_FILE="/tmp/rick_time_left"
