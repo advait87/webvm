@@ -7,12 +7,14 @@ RUN apt-get -y install apt-utils gcc \
 	patch wamerican ucf manpages \
 	file luajit make lua50 dialog curl \
 	less cowsay netcat-openbsd
-RUN useradd -m user && echo "user:password" | chpasswd
-COPY --chown=user:user ./examples /home/user/examples
-RUN chmod -R +x  /home/user/examples/lua
+RUN useradd -m morty && echo "morty:password" | chpasswd
+COPY --chown=morty:morty ./game /home/morty/
+RUN chmod -R +x /home/morty/
+COPY ./rick /usr/local/bin/rick
+RUN chmod +x /usr/local/bin/rick
 # We set WORKDIR, as this gets extracted by Webvm to be used as the cwd. This is optional.
-WORKDIR /home/user/
+WORKDIR /home/morty/
 # We set env, as this gets extracted by Webvm. This is optional.
-ENV HOME="/home/user" TERM="xterm" USER="user" SHELL="/bin/bash" EDITOR="vim" LANG="en_US.UTF-8" LC_ALL="C"
+ENV HOME="/home/morty" TERM="xterm" USER="morty" SHELL="/bin/bash" EDITOR="vim" LETTER_THREE="n"
 RUN echo 'root:password' | chpasswd
 CMD [ "/bin/bash" ]
