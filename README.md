@@ -1,4 +1,4 @@
-# Rick and Morty stuck in a termanal
+# Rick and Morty stuck in a terminal
 
 
 This is a game to teach Linux newbies about Linux commands in a time bound game. To play this game, just do `sh start_game.sh` from the terminal.
