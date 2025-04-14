@@ -1,0 +1,23 @@
+# Rick's Totally Half-Assed Linux Cheatsheet
+# Use it, don't use it, I don't care, Morty.
+
+ls          # Shows crap in the current folder. Like your mess, Morty.
+ls -a       # Shows *all* the crap, even the hidden junk.
+cd          # Change dir. You know, like... go somewhere else. Example: cd Documents
+touch       # Make a blank file. No magic. Example: touch useless.txt
+mkdir       # Make a folder. Why? Who knows. mkdir new_folder
+mv          # Move stuff. Or rename. Whatever. mv a.txt b.txt
+              Use it like mv path_to_old_file path_to_new_file
+cat         # Spits file contents. Like, "meow", but nerdy. cat file.txt
+head        # Shows the first few lines of a file. Who reads full files anyway?
+
+grep -r "thing" .   # Dig through files for "thing". Super annoying but kinda useful.
+sh script.sh        # Run a shell script. Just do it. No whining.
+python3             # Python, Morty. It's like regular Python but newer.
+--help              # Slap this on a command to beg for usage info. Example: ls --help
+
+env                 # Shows your environment. Not the trees, the variables.
+echo $HOME          # Print the value of a variable. Replace $HOME with whatever, I dunno.
+                    # Also works for yelling into the void: echo "I’m surrounded by idiots"
+
+# That’s it. If you want more, go read the manual or something. Or ask Summer.
