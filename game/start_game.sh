@@ -1,13 +1,5 @@
 #!/bin/bash
 
-# 1. ASCII Art
-clear
-echo "==============================="
-echo "   ASCII ART GOES HERE"
-echo "==============================="
-sleep 1
-
-# 2. Dialogue Function
 say() {
     echo
     echo "$1"
@@ -20,11 +12,9 @@ say "Rick: Grrr! Morty, the system is going to wipe itself out in 4:20 minutes. 
 say "Morty: Why are you telling me that? You're supposed to save us."
 say "Rick: What the f Morty, someone linked my brain to this computer. We’re in a terminal, Morty!"
 
-# 3. Copy to Clipboard
 COMMAND="cat \$HOME/chitsheet.txt"
 echo "Morty wherever you are, run cat \$HOME/chitsheet.txt to see my cheatsheet of Linux commands"
 
-# 4. Timer function
 REMAINING_FILE="/tmp/rick_time_left"
 
 start_timer() {
@@ -42,10 +32,8 @@ start_timer() {
     exit 1
 }
 
-# Start timer in background
 start_timer &
 
-# Let the player go
 echo
 echo "Rick: Go Morty, the terminal is yours. Type commands and save us!"
 echo "Rick: Type 'rick' anytime to check how much time is left!"
