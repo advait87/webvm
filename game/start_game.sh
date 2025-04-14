@@ -63,4 +63,7 @@ start_timer &
 echo
 echo "Rick: Go Morty, the terminal is yours. Type commands and save us!"
 echo "Rick: Type 'rick' anytime to check how much time is left!"
+echo "Rick: I overheard that one of the letters is saved in an environment variable."
+echo "Rick: Also, I know the 4th letter, ask me and I'll tell you."
+
 
